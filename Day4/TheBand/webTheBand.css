@@ -1,0 +1,23 @@
+#navigation {
+    display: flex;
+    background-color: black;
+}
+
+.text-navigation {
+    color: white;
+    margin: 10px;
+}
+
+#about {
+    font-size: 130%;
+}
+
+.title {
+    text-align: center;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}

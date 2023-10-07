@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BT4_Day8.css">
+
+    <style>
+        #background {
+            background-color: white;
+            height: 90%;
+            display: block;
+            border-radius: 10px;
+            width: 90%;
+            margin: auto;
+        }
+
+        #title {
+            color: rgb(224, 15, 15);
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .style_text {
+            width: 500px;
+            height: 30px;
+        }
+
+        form {
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        #message {
+            padding-bottom: 250px;
+        }
+
+        #submit {
+            color: white;
+            background-color: rgb(209, 51, 51);
+            padding: 10px 40px;
+            border: none;
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+
+<body style="background-color: pink; height: 100%;">
+    <div id="background">
+        <h1 id="title">FEEDBACK FORM</h1>
+        <form action="">
+            <input type="text" name="name" id="name" class="style_text" value="" placeholder="Name">
+            <br /><br />
+            <input type="text" name="email" id="email" class="style_text" value="" placeholder="Email">
+            <br /><br />
+            <input type="text" name="subject" id="subject" class="style_text" value="" placeholder="Subject">
+            <br /><br />
+            <input type="text" name="message" id="message" class="style_text" value="" placeholder="Message">
+            <br /><br />
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>

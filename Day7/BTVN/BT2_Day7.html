@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm</title>
+
+    <style>
+        #search_advance {
+            display: none;
+        }
+    </style>
+
+    <script>
+        var flag = 0;
+    </script>
+
+    <script>
+        function show_search_advance() {
+            if (flag == 0) {
+                let x = document.getElementById("search_advance");
+                x.style.display = "contents";
+                let y = document.getElementById("show_search_advance");
+                y.innerText = "Bỏ tìm kiếm nâng cao";
+                flag++;
+            }
+            else {
+                let x = document.getElementById("search_advance");
+                x.style.display = "none";
+                let y = document.getElementById("show_search_advance");
+                y.innerText = "Tìm kiếm nâng cao";
+                flag--;
+            }
+            return flag;
+        }
+
+        function find_button_click() {
+            if (flag == 0) {
+                let x = document.getElementById("title");
+                let z = document.getElementById("result");
+                z.innerText = "Bạn đang tìm: " + x.value;
+            }
+            else {
+                let x = document.getElementById("title");
+                let y = document.getElementById("category");
+                let z = document.getElementById("result");
+                z.innerText = "Bạn đang tìm kiếm nâng cao: " + x.value + " ------- Chuyên mục: " + y.value;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Tìm kiếm dữ liệu</h1>
+    <table border="1" cellpadding="5">
+        <tr>
+            <td>Nhập tiêu đề</td>
+            <td>
+                <input type="text" id="title" value="" /> <br />
+                <a href="#" id="show_search_advance" onclick="show_search_advance()">Tìm kiếm nâng cao</a>
+            </td>
+        </tr>
+        <tr id="search_advance">
+            <td>Chọn chuyên mục</td>
+            <td>
+                <select id="category" style="width: 170px;">
+                    <option value="Game">Game</option>
+                    <option value="Web">Web</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" id="button_search" value="Tìm kiếm" onclick="find_button_click()">
+            </td>
+        </tr>
+    </table>
+    <div id="result"></div>
+</body>
+
+</html>

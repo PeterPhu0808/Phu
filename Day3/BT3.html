@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+
+        .navigation {
+            width: 20%;
+            height: 730px;
+            background-color: mediumaquamarine;
+        }
+
+        .right-column {
+            width: 80%;
+            height: 730px;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .header {
+            height: 100px;
+            background-color: mediumseagreen;
+        }
+
+        .bottom {
+            height: 630px;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .article {
+            height: 530px;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: mediumseagreen;
+        }
+
+        .aside {
+            height: 630px;
+            width: 20%;
+            background-color:bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="navigation">Nav</div>
+        <div class="right-column">
+            <div class="header">
+                Header
+            </div>
+
+            <div class="bottom">
+                <div style="width: 80%;">
+                    <div class="article">
+                        Article
+                    </div>
+                    <div class="footer">
+                        Footer
+                    </div>
+                </div>
+                <div class="aside">
+                    Aside
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

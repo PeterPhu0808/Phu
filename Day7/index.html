@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1 id="h1">Hello</h1> -->
+    <p class="para">Hi 1</p>
+    <p class="para">Hi 2</p>
+    <p class="para">Hi 3</p>
+    <p class="para">Hi 4</p>
+
+    <script>
+        // var hello = function (mess) {
+        //     console.log(mess);
+        // }
+
+        // hello("Hello world");
+
+        // function message(content) {
+        //     console.log(content);
+        // }
+
+        // function multiMessage(content1, content2) {
+        //     console.log(content1 + content2);
+        // }
+
+        // function Sum(a, b) {
+        //     return a + b;
+        // }
+
+        // message("Hello");
+        // multiMessage("Hello", "World");
+        // console.log(Sum(1, 2));
+
+        // const h1 = document.getElementById('h1');
+        // h1.style.color = "red";
+        // h1.style.backgroundColor = "green";
+
+        var matches = document.getElementsByClassName('para');
+        for (let i in matches) {
+            matches[i].style.backgroundColor = "red";   
+        }
+    </script>
+</body>
+
+</html>
