@@ -1,0 +1,5 @@
+div#container div#main_content p.introduce_text {
+    padding: 15px 15px;
+    font-size: 110%;
+    line-height: 150%;
+}

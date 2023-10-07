@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Music Club</title>
+    <link rel="icon" type="image/x-icon" href="IMG/icon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style_contact.css"> 
+</head>
+
+<body>
+    <header>
+        <img src="IMG/Logo2.jpg" style="height: 150px; padding-left: 15px;">
+        <div style="padding: 15px 10px; text-align: center;">
+            <h2>Câu lạc bộ âm nhạc </h2>
+            <h2>MindX Phan Xích Long</h2>
+        </div>
+        <div style="padding: 25px 10px;">
+            <h3 id="date_box">Ngày: </h3>
+            <h3 id="time_box">Giờ: </h3>
+            <h3 id="hello_box">Xin chào:
+                <i id="username_box">Guest</i>
+            </h3>
+        </div>
+        <script src="SCRIPT/getDate.js"></script>
+        <script>getDateTime();</script>
+    </header>
+
+    <nav>
+        <div style="float: left;">
+            <a href="index.html">Trang chủ</a>
+            <a href="introduce.html">Giới thiệu</a>
+            <a href="activities.html">Hoạt động - Sự kiện</a>
+            <a href="news.html">Tin tức</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+
+        <div style="float: right;">
+            <a href="login.html" class="login_border" id="login_link">Đăng nhập</a>
+            <a href="signin.html" id="signin_link">Đăng ký</a>
+        </div>
+    </nav>
+
+    <script src="SCRIPT/checkMember.js"></script>
+
+    <div id="container">
+        <div id="main_content">
+            <h2 id="contact_title">Liên hệ</h2>
+            <p class="contact_text">MindX Technology School</p>
+            <p class="contact_text">261-263 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP.HCM</p>
+            <p class="contact_text">Lớp: JSB02</p>
+            <p class="contact_text">Người thực hiện: Phạm Thịnh Phú</p>
+            <p class="contact_text">Email: peterphu2008@gmail.com</p>
+            <p class="contact_text">Website: <a href="https://mindx.edu.vn/">www.MindX.edu.vn</a> </p>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.155838694759!2d106.68281967481849!3d10.799373858770455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529579ec7c25f%3A0x5071370e1c517843!2sMindX!5e0!3m2!1svi!2s!4v1692881363775!5m2!1svi!2s"  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form name="feedback_form" id="feedback_form" action="feedback.html" method="get" 
+            onsubmit="return checkValidationFeedback()">
+                <label for="feedback_name">Họ Tên</label>
+                <br/>
+                <input type="text" id="feedback_name" name="feedback_name" class="text_box">
+                <br/><br/>
+                <label for="feedback_email">Email</label>
+                <br/>
+                <input type="text" id="feedback_email" name="feedback_email" class="text_box">
+                <br/><br/>
+                <label for="feedback_title">Tiêu đề</label>
+                <br/>
+                <input type="text" id="feedback_title" name="feedback_title" class="text_box">
+                <br/><br/>
+                <label for="feedback_content">Nội dung</label>
+                <br/>
+                <textarea name="feedback_content" id="feedback_content" rows="10" cols="103" style="margin-top: 5px;"></textarea>
+                <br/><br/>
+                <input type="submit" id="btnSubmit" name="btnSubmit" value="Gửi">
+            </form>
+
+            <script src="SCRIPT/checkValidationFeedback.js"></script>
+
+        </div>
+
+        <div id="sidebar">
+            <a href="news.html" style="text-decoration: none;">
+                <h3>Những tin tức nổi bật</h3>
+            </a>
+            <a class="sidebar_content" href="news.html">
+                <img src="IMG/BieuDien4.jpg" style="width: 120px;">
+                <p>MindX club - Ra sân khấu lớn</p>
+            </a>
+            <a class="sidebar_content" href="news.html">
+                <img src="IMG/SinhHoatNhom2.jpg" style="width: 120px;">
+                <p>Những buổi họp nhóm vui vẻ</p>
+            </a>
+            <a class="sidebar_content" href="news.html">
+                <img src="IMG/Piano.jpg" style="width: 120px;">
+                <p>Piano và nơi những bản nhạc bất hủ</p>
+            </a>
+            <a class="sidebar_content" href="news.html">
+                <img src="IMG/Guitar.jpg" style="width: 120px;">
+                <p>Những guitalist điệu nghệ</p>
+            </a>
+
+            <div style="padding-left: 10px;">
+                <hr width="95%" color="red">
+            </div>
+
+            <div class="sidebar_logo">
+                <a href="https://www.facebook.com">
+                    <img src="IMG/FB_logo.png">
+                    <span>Fanpage</span>
+                </a>
+                <br />
+                <a href="https://www.instagram.com">
+                    <img src="IMG/Instagram_logo.png">
+                    <span>Instagram</span>
+                </a>
+                <br />
+                <a href="https://www.pinterest.com">
+                    <img src="IMG/Pinterest_logo.png">
+                    <span>Pinterest</span>
+                </a>
+                <br />
+                <a href="https://www.twitter.com">
+                    <img src="IMG/Twitter_logo.png">
+                    <span>Twitter</span>
+                </a>
+            </div>
+
+            <div style="padding-left: 10px;">
+                <hr width="95%" color="red">
+            </div>
+
+            <div class="hotline">
+                <a href="contact.html">
+                    <img src="IMG/hotline_logo.png">
+                    <p class="hotline_number">028 7771 7789</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>MindX Technology School</p>
+            <p>261-263 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP.HCM</p>
+            <p>Hotline: 02877717789</p>
+        </div>
+        <div>
+            <p>Lớp: JSB02</p>
+            <p>Người thực hiện: Phạm Thịnh Phú</p>
+            <p>&copy; 08/2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

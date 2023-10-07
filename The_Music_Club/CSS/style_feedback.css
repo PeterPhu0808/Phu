@@ -1,0 +1,16 @@
+h1.feedback_success {
+    margin: 30px;
+    text-align: center;
+    color: rgba(211, 94, 94, 0.774);
+}
+
+div#feedback_return {
+    margin: auto;
+    width: 300px;
+    border: 2px solid rgba(153, 15, 15, 0.825);
+    border-radius: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: rgba(211, 94, 94, 0.774);
+    text-shadow: rgba(153, 15, 15, 0.825) 1px 1px;
+}

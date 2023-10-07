@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Music Club</title>
+    <link rel="icon" type="image/x-icon" href="IMG/icon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style_news_details.css">
+</head>
+
+<body>
+    <header>
+        <img src="IMG/Logo2.jpg" style="height: 150px; padding-left: 15px;">
+        <div style="padding: 15px 10px; text-align: center;">
+            <h2>Câu lạc bộ âm nhạc </h2>
+            <h2>MindX Phan Xích Long</h2>
+        </div>
+        <div style="padding: 25px 10px;">
+            <h3 id="date_box">Ngày: </h3>
+            <h3 id="time_box">Giờ: </h3>
+            <h3 id="hello_box">Xin chào:
+                <i id="username_box">Guest</i>
+            </h3>
+        </div>
+        <script src="SCRIPT/getDate.js"></script>
+        <script>getDateTime();</script>
+    </header>
+
+    <nav>
+        <div style="float: left;">
+            <a href="index.html">Trang chủ</a>
+            <a href="introduce.html">Giới thiệu</a>
+            <a href="activities.html">Hoạt động - Sự kiện</a>
+            <a href="news.html">Tin tức</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+
+        <div style="float: right;">
+            <a href="login.html" class="login_border" id="login_link">Đăng nhập</a>
+            <a href="signin.html" id="signin_link">Đăng ký</a>
+        </div>
+    </nav>
+
+    <script src="SCRIPT/checkMember.js"></script>
+
+    <div id="container">
+        <div id="main_content">
+            <div class="img_box">
+                <img src="IMG/ThanhVien.jpg">
+            </div>
+            <div class="content_box">
+                <h3 class="content_title">Chào đón K8 đến với ngôi nhà chung MindX</h3>
+                <p class="content_details">Tiếng ve rộn rã vang lên… một mùa tuyển sinh nữa lại đến!</p>
+
+                <p class="content_details">Vào ngày 28/5 vừa qua, trường THPT Khoa học Giáo dục đã tổ chức thành công kì thi tuyển sinh vào lớp 10. Có thể nói, đây là dấu mốc quan trọng, là một trong những bước ngoặt lớn của các bạn học sinh 2k8 trước ngưỡng cửa chuyển cấp - vượt vũ môn gian khó. Trải qua khoảng thời gian ôn luyện vất vả, áp lực, căng thẳng cùng với quyết tâm cao độ, các em học sinh lớp 9 đã chinh phục thành công kì thi vào 10 của nhà trường. Một lần nữa, xin chúc mừng tất cả các em đã trúng tuyển và trở thành Hesers khóa 8 - một mảnh ghép của đại gia đình HES thân thương.</p>
+
+                <p class="content_details">Chào mừng tất cả những thành viên mới của đại gia đình HES. Năm học 2023 - 2024 là một năm học đặc biệt, khi lần đầu tiên chúng ta được học tập tại khu đô thị xanh Hòa Lạc của ĐHQG Hà Nội. Hòa nhập cùng với các anh chị sinh viên của hơn 10 trường ĐH trực thuộc ĐHQGHN, các em sẽ có những trải nghiệm thú vị và trưởng thành sớm cũng như được định hướng sớm ngành nghề sẽ lựa chọn trong tương lai. Với những trang thiết bị hiện đại cùng sự nhiệt huyết, yêu nghề của các thầy cô, chắc chắn hứa hẹn sẽ mang đến những điều tuyệt vời trong 3 năm thanh xuân sắp tới... Chúc các em học sinh 2k8 sẽ có khoảng thời gian học tập trải nghiệm ý nghĩa, thú vị và sớm trưởng thành tại mái trường THPT Khoa học Giáo dục.</p>
+            </div>
+            <a href="news.html" style="text-decoration: none;">
+                <div id="news_return">
+                    <img src="IMG/back.png" style="width: 50px;">
+                    <h2>Trở về trang tin tức</h2>
+                </div>
+            </a>
+        </div>
+
+        <div id="sidebar">
+            <a href="news.html" style="text-decoration: none;">
+                <h3>Những tin tức nổi bật</h3>
+            </a>
+            <a class="sidebar_content" href="news.html">
+                <img src="IMG/BieuDien4.jpg" style="width: 120px;">
+                <p>MindX club - Ra sân khấu lớn</p>
+            </a>
+            <a class="sidebar_content" href="news.html">
+                <img src="IMG/SinhHoatNhom2.jpg" style="width: 120px;">
+                <p>Những buổi họp nhóm vui vẻ</p>
+            </a>
+            <a class="sidebar_content" href="news.html">
+                <img src="IMG/Piano.jpg" style="width: 120px;">
+                <p>Piano và nơi những bản nhạc bất hủ</p>
+            </a>
+            <a class="sidebar_content" href="news.html">
+                <img src="IMG/Guitar.jpg" style="width: 120px;">
+                <p>Những guitalist điệu nghệ</p>
+            </a>
+
+            <div style="padding-left: 10px;">
+                <hr width="95%" color="red">
+            </div>
+
+            <div class="sidebar_logo">
+                <a href="https://www.facebook.com">
+                    <img src="IMG/FB_logo.png">
+                    <span>Fanpage</span>
+                </a>
+                <br />
+                <a href="https://www.instagram.com">
+                    <img src="IMG/Instagram_logo.png">
+                    <span>Instagram</span>
+                </a>
+                <br />
+                <a href="https://www.pinterest.com">
+                    <img src="IMG/Pinterest_logo.png">
+                    <span>Pinterest</span>
+                </a>
+                <br />
+                <a href="https://www.twitter.com">
+                    <img src="IMG/Twitter_logo.png">
+                    <span>Twitter</span>
+                </a>
+            </div>
+
+            <div style="padding-left: 10px;">
+                <hr width="95%" color="red">
+            </div>
+
+            <div class="hotline">
+                <a href="contact.html">
+                    <img src="IMG/hotline_logo.png">
+                    <p class="hotline_number">028 7771 7789</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>MindX Technology School</p>
+            <p>261-263 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP.HCM</p>
+            <p>Hotline: 02877717789</p>
+        </div>
+        <div>
+            <p>Lớp: JSB02</p>
+            <p>Người thực hiện: Phạm Thịnh Phú</p>
+            <p>&copy; 08/2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

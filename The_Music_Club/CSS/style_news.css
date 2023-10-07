@@ -1,0 +1,30 @@
+div.news_container {
+    display: flex;
+    justify-content: left;
+}
+a.news_img {
+    max-width: 300px;
+    max-height: 200px;
+    margin: 10px 10px;
+}
+div.news_content {
+    max-width: 500px;
+    max-height: 200px;
+    margin: 10px 10px;
+}
+h3.news_article {
+    color: rgba(153, 15, 15, 0.825);
+    text-transform: uppercase;
+}
+p.news_date {
+    color: rgba(211, 94, 94, 0.774);
+}
+p.news_brief {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a.news_details {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(153, 15, 15, 0.825);
+}

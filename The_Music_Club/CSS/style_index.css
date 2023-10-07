@@ -1,0 +1,133 @@
+/* BACKGROUND FOR WHOLE PAGE */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(215, 215, 215);
+}
+
+/* HEADER AND FOOTER */
+header, footer {
+    width: auto;
+    height: 150px;
+}
+
+header {
+    display: flex;
+    color: rgba(153, 15, 15, 0.825);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    font-size: 16.5px;
+    background-color: rgba(153, 15, 15, 0.825);
+    margin-top: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    line-height: 200%;
+}
+
+/* NAVIGATION */
+nav {
+    width: 1103px;
+    height: 40px;
+    margin: auto;
+    background-color: rgba(153, 15, 15, 0.825);
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 11px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+
+nav a:hover {
+    background-color: rgba(211, 94, 94, 0.774);
+    color: rgb(54, 54, 54);
+}
+
+nav div {
+    padding-top:10px;
+}
+
+.login_border {
+    border: 2px solid whitesmoke; 
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+}
+
+/* MAIN CONTENT */
+#main_content{
+    margin: auto;
+    width: 1000px;
+    background-color: whitesmoke;
+}
+
+#container {
+    margin: auto;
+    width: 1090px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev_box , #next_box{
+    background-color: rgba(153, 15, 15, 0.825);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#prev_box:hover {
+    background-color: rgba(211, 94, 94, 0.774);
+}
+
+#next_box:hover {
+    background-color: rgba(211, 94, 94, 0.774);
+}
+
+div.slideShows a:hover img {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.6;
+}
+
+div.slideShows a {
+    display: block;
+    overflow: hidden;
+}
+
+div#main_content div.text_image {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    color: rgba(153, 15, 15, 0.825);
+    text-shadow: black 1px 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 40px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.7s ease-in-out;
+    opacity: 0;
+}
+
+div#main_content:hover div.text_image {
+    bottom: 30%;
+    opacity: 1;
+}

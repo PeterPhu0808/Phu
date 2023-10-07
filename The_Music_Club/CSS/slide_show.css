@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+#main-content {
+    position: relative;
+}
+
+.slideShows {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}

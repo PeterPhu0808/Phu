@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Music Club</title>
+    <link rel="icon" type="image/x-icon" href="IMG/icon.ico">
+    <link rel="stylesheet" href="CSS/style_index.css">
+    <link rel="stylesheet" href="CSS/slide_show.css">
+</head>
+
+<body>
+    <header>
+        <img src="IMG/Logo2.jpg" style="height: 150px; padding-left: 15px;">
+        <div style="padding: 15px 10px; text-align: center;">
+            <h2>Câu lạc bộ âm nhạc </h2>
+            <h2>MindX Phan Xích Long</h2>
+        </div>
+        <div style="padding: 25px 10px;">
+            <h3 id="date_box">Ngày: </h3>
+            <h3 id="time_box">Giờ: </h3>
+            <h3 id="hello_box">Xin chào:
+                <i id="username_box">Guest</i>
+            </h3>
+        </div>
+        <script src="SCRIPT/getDate.js"></script>
+        <script>getDateTime();</script>
+    </header>
+
+    <nav>
+        <div style="float: left;">
+            <a href="index.html">Trang chủ</a>
+            <a href="introduce.html">Giới thiệu</a>
+            <a href="activities.html">Hoạt động - Sự kiện</a>
+            <a href="news.html">Tin tức</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+
+        <div style="float: right;">
+            <a href="login.html" class="login_border" id="login_link">Đăng nhập</a>
+            <a href="signin.html" id="signin_link">Đăng ký</a>
+            
+        </div>
+    </nav>
+
+    <script src="SCRIPT/checkMember.js"></script>
+
+    <div id="container">
+        <!-- prev button -->
+        <div id="prev_box" onclick="plusSlides(1)">
+            <a class="prev"><img src="IMG/left-arrow.png" style="width: 40px;"></a>
+        </div>
+        <!-- slide show -->
+        <div id="main_content">
+            <div class="slideShows">
+                <a href="introduce.html"><img src="IMG/BieuDien4.jpg" width="1000px"></a>
+            </div>
+            <div class="slideShows">
+                <a href="introduce.html"><img src="IMG/BieuDien3.jpg" width="1000px"></a>
+            </div>
+            <div class="slideShows">
+                <a href="introduce.html"><img src="IMG/SinhHoatNhom2.jpg" width="1000px"></a>
+            </div>
+            <div class="slideShows">
+                <a href="introduce.html"><img src="IMG/Piano.jpg" width="1000px"></a>
+            </div>
+            <div class="slideShows">
+                <a href="introduce.html"><img src="IMG/Guitar.jpg" width="1000px"></a>
+            </div>
+            <div class="text_image">Câu lạc bộ âm nhạc</div>
+        </div>
+        <!-- next button -->
+        <div id="next_box" onclick="plusSlides(-1)">
+            <a class="next"><img src="IMG/right-arrow.png" style="width: 40px;"></a>
+        </div>
+    </div>
+
+    <script src="SCRIPT/slide_show.js"></script>
+
+    <footer>
+        <div>
+            <p>MindX Technology School</p>
+            <p>261-263 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP.HCM</p>
+            <p>Hotline: 02877717789</p>
+        </div>
+        <div>
+            <p>Lớp: JSB02</p>
+            <p>Người thực hiện: Phạm Thịnh Phú</p>
+            <p>&copy; 08/2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
