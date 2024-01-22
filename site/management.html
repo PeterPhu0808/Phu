@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Management</title>
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+</head>
+<body style="background: url(../Images/Slide_Show/loginAdmin.jpg)">
+    <div style="margin-left: 200px; margin-top: 20px; color: white;">
+        <img src="../Images/Logo.png" alt="" style="width: 200px; margin-bottom: 50px;">
+        <h2 style="color: white;">Sales Management</h2>
+        </br></br>
+        <a href="productsManagement.html" style="text-decoration: underline;">Products Management</a>
+        </br></br>
+        <a href="ordersManagement.html" style="text-decoration: underline;">Orders Management</a>
+        </br></br>
+        <input type="button" value="Log out" id="logoutBtn" onclick="logoutAdmin()">
+    </div>
+
+    <script>
+        function logoutAdmin(){
+            window.location = "loginAdmin.html";
+        }
+    </script>
+</body>
+</html>

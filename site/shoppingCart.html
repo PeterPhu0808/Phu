@@ -1,0 +1,405 @@
+<!--Variety music-->
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Shopping Cart</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f7f7f8;">
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+                src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+                alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+    </div>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <!-- Page Header-->
+        <!-- <a class="banner banner-top" href="https://www.templatemonster.com/website-templates/monstroid2.html" target="_blank"><img src="images/monstroid_02.jpg" alt="" height="0"/></a>
+      <header class="section page-header"> -->
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap rd-navbar-absolute">
+            <nav class="rd-navbar rd-navbar-creative" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed"
+                data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static"
+                data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static"
+                data-lg-stick-up-offset="20px" data-xl-stick-up-offset="20px" data-xxl-stick-up-offset="20px"
+                data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                <div class="rd-navbar-main-outer">
+                    <div class="rd-navbar-main">
+                        <!-- RD Navbar Panel-->
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle"
+                                data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
+                                        src="../Images/Logo.png" alt="" width="110px" /></a>
+                            </div>
+                        </div>
+                        <div class="rd-navbar-main-element">
+                            <div class="rd-navbar-nav-wrap">
+                                <!-- RD Navbar Nav-->
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link"
+                                            href="products.html">Products</a>
+                                    </li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                                    </li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="shoppingCart.html"><img
+                                                src="../Images/Slide_Show/shopping-cart (1).png"
+                                                style="width: 30px;"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- RD Navbar Search-->
+                            <!-- <div class="rd-navbar-search">
+                                <button class="rd-navbar-search-toggle rd-navbar-fixed-element-1"
+                                    data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                <form class="rd-search" action="#" method="GET">
+                                    <div class="form-wrap">
+                                        <label class="form-label" for="rd-navbar-search-form-input">Search</label>
+                                        <input class="rd-navbar-search-form-input form-input"
+                                            id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
+                                        <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                                    </div>
+                                    <button class="rd-search-form-submit mdi mdi-magnify" type="submit"></button>
+                                </form>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </header>
+        <!-- Breadcrumbs -->
+        <section class="section section-bredcrumbs">
+            <div class="container context-dark breadcrumb-wrapper text-left">
+                <h1 style="font-weight: 300;">Shopping Cart</h1>
+                <ul class="breadcrumbs-custom">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="active">Shopping Cart</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Product Details -->
+        <div class="shoppingCart" id="shoppingCart">
+            <div class="cartHeader">
+                <div class="productNameCart" style="width: 400px;">Product Name</div>
+                <div class="quantityCart">Quantity</div>
+                <div class="priceCart">Price</div>
+                <div class="valueCart">Value</div>
+            </div>
+            <hr class="hrCart_style">
+
+            <!-- Hiển thị các sp trong giỏ hàng -->
+            <!-- <div class="cartItem">
+                <div style="text-align: center; width: 400px;"><img
+                        src="../Images/Classic/YAMAHA_NCX1200R/Dan-Classic-guitar-Yamaha-NCX1200R.jpg"
+                        class="imageCart"></br>Yamaha NCX1200R</div>
+                <div class="quantity">2</div>
+                <div class="price">350</div>
+                <div class="value">700</div>
+            </div>
+            <hr class="hrCart_style"> -->
+        </div>
+        <div class="totalBox">
+            <div class="totalTitle">Total:&ensp;&ensp;</div>
+            <div class="totalValue"><span id="totalValue">1700</span></div>
+        </div>
+        <div class="paymentButton">
+            <input type="button" value="CHECK OUT" onclick="checkOutClick(this)">
+        </div>
+
+        <hr class="hr_style">
+
+        <div class="customerInfo" id="customerInfo">
+            <h3 style="margin-top: 10px;">Fill in your information</h3>
+            <input type="text" placeholder="Full name" id="fullName">
+            <input type="number" placeholder="Phone number" id="phoneNumber">
+            <input type="email" placeholder="Email" id="email">
+            <input type="text" placeholder="Address" id="address">
+
+            <div class="alert" id="alert">*Please fill all information above</div>
+
+            <input type="button" value="ORDER" id="orderButton" onclick="placeOrder()">
+        </div>
+
+        <!-- Page Footer-->
+        <!-- <a class="banner" href="https://www.templatemonster.com/website-templates/monstroid2.html" target="_blank"><img src="images/monstroid_big_02.jpg" alt="" height="0"/></a> -->
+        <footer class="section footer-2">
+            <div class="container">
+                <div class="row row-40">
+                    <div class="col-md-6 col-lg-3"><a class="footer-logo" href="index.html"><img
+                                src="../Images/Logo.png" alt="" width="180" height="26" /></a>
+                        <p>ThinhPhu Guitar is one of the most popular guitar shops selling the best and most diverse
+                            products. We were founded in 2024 to promote genuine Yamaha, Fender, Taylor, Martin,
+                            Takamine and Cordoba.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white title">Contact Information</h5>
+                        <ul class="contact-box">
+                            <li>
+                                <div class="unit unit-horizontal unit-spacing-xxs">
+                                    <div class="unit-left"><span class="icon mdi mdi-map-marker accent-icon"></span>
+                                    </div>
+                                    <div class="unit-body"><a href="#">263 Phan Xích Long, <br
+                                                class="veil reveal-lg-inline">Phường 2, Quận Phú Nhuận, TP.HCM</a></div>
+                            </li>
+                            <li>
+                                <div class="unit unit-horizontal unit-spacing-xxs">
+                                    <div class="unit-left"><span class="icon mdi mdi-phone accent-icon"></span></div>
+                                    <div class="unit-body">
+                                        <ul class="list-phones">
+                                            <li><a href="tel:#">0866 364 179</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="unit unit-horizontal unit-spacing-xxs">
+                                    <div class="unit-left"><span class="icon mdi mdi-email-outline accent-icon"></span>
+                                    </div>
+                                    <div class="unit-body"><a href="mailto:#">ThinhPhuGuitar@gmail.com</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="group-md group-middle social-items"><a
+                                class="icon icon-md novi-icon mdi mdi-facebook" href="#"></a><a
+                                class="icon icon-md novi-icon mdi mdi-twitter" href="#"></a><a
+                                class="icon icon-md novi-icon mdi mdi-instagram" href="#"></a><a
+                                class="icon icon-md novi-icon mdi mdi-facebook-messenger" href="#"></a><a
+                                class="icon icon-md novi-icon mdi mdi-linkedin" href="#"></a><a
+                                class="icon icon-md novi-icon mdi mdi-snapchat" href="#"></a></div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="title">Gallery</h5>
+                        <ul class="instafeed instagram-gallery" data-lightgallery="group">
+                            <li><a class="instagram-item" data-lightgallery="item"
+                                    href="images/insta-gallery-1-1200x800-original.jpg"><img
+                                        src="../Images/Slide_Show/BieuDien4.jpg" alt="" width="72" height="72" /></a>
+                            </li>
+                            <li><a class="instagram-item" data-lightgallery="item"
+                                    href="images/insta-gallery-2-1200x800-original.jpg"><img
+                                        src="../Images/Slide_Show/Guitar.jpg" alt="" width="72" height="72" /></a>
+                            </li>
+                            <li><a class="instagram-item" data-lightgallery="item"
+                                    href="images/insta-gallery-3-1200x800-original.jpg"><img
+                                        src="../Images/Electric/FENDER_SQ_SONIC/dan-guitar-dien-fender-sq-sonic-strat-mn-black-0373152506_3215.jpg"
+                                        alt="" width="72" height="72" /></a>
+                            </li>
+                            <li><a class="instagram-item" data-lightgallery="item"
+                                    href="images/insta-gallery-4-1200x800-original.jpg"><img
+                                        src="../Images/Electric/FENDER_SQUIER_CLASSIC/dan-guitar-dien-fender-squier-classic-vibe-50s-strat-mn-0374005506_3932.jpg"
+                                        alt="" width="72" height="72" /></a>
+                            </li>
+                            <li><a class="instagram-item" data-lightgallery="item"
+                                    href="images/insta-gallery-5-1200x800-original.jpg"><img
+                                        src="../Images/Acoustic/MARTIN_15_SERIES_D-15M_STREETMASTER/dan-guitar-acoustic-martin-15-series-d-15m-streetmaster.jpg"
+                                        alt="" width="72" height="72" /></a>
+                            </li>
+                            <li><a class="instagram-item" data-lightgallery="item"
+                                    href="images/insta-gallery-6-1200x800-original.jpg"><img
+                                        src="../Images/Classic/YAMAHA_CGX112MS/dan-classic-guitar-yamaha-cgx122ms_1746.jpg"
+                                        alt="" width="72" height="72" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white title">Newsletter</h5>
+                        <p>Keep up with our always upcoming news and updates. Enter your e-mail and subscribe to our
+                            newsletter.</p>
+                        <!-- RD Mailform-->
+                        <form class="rd-form form-sm rd-mailform" data-form-output="form-output-global"
+                            data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                            <div class="form-wrap">
+                                <input class="form-input" id="newsletter-email" type="email" name="email"
+                                    data-constraints="@Email @Required">
+                                <label class="form-label" for="newsletter-email">Enter your e-mail</label>
+                            </div>
+                            <button class="button button-primary" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Rights-->
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>ThinhPhu
+                        Guitar</span>. All Rights Reserved. Design by <a
+                        href="https://www.templatemonster.com">TemplateMonster</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="../SCRIPT/cart.js"></script>
+    <script src="js/displayProductDetails.js"></script>
+
+    <script>
+        let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart"));
+        let totalValue = 0;
+        
+        if (shoppingCart) {
+            shoppingCart.forEach((item, index) => {
+                document.getElementById("shoppingCart").innerHTML += `
+                <div class="cartItem">
+                <div style="text-align: center; width: 400px;"><img src="${item.productImageURL}" class="imageCart"></br>${item.productName}</div>
+                <div class="quantity"><input type="number" class="quantityChange" value="${item.quantity}" onchange="changeQuantity(${item.productPrice}, this.value, ${index}, '${item.productName}')" onkeyup="changeQuantity(${item.productPrice}, this.value, ${index}, '${item.productName}')"></div>
+                <div class="price">${item.productPrice} $</div>
+                <div class="value"><span class="valueChange">${item.quantity * item.productPrice}</span> $ <span class="binButton"> <img src=../Images/bin.png onclick="removeItemInCart(${index})"> </span></div>
+                </div>
+                
+                <hr class="hrCart_style">
+            `
+                totalValue += item.quantity * item.productPrice;
+            })
+            document.querySelector("#totalValue").innerHTML = totalValue + " $";
+        }
+    </script>
+
+    <script>
+        function changeQuantity(price, quantity, i, productName){
+            //Cập nhật lại số tiền của product
+            let value = price*quantity;
+            document.getElementsByClassName("valueChange")[i].innerHTML=value;
+            
+            //Tính lại total value của giỏ hàng
+            tinhtongtien();
+
+            //Cập nhật lại giỏ hàng vào localstorage
+            let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart"));   
+            let item = shoppingCart.find(item => item.productName === productName);
+            if (item) {
+                item.quantity = quantity;
+            }
+            localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+        }
+
+        function tinhtongtien(){
+            arrValue = document.getElementsByClassName("valueChange");
+            let totalValue = 0;
+            for (let t of arrValue){
+                totalValue += parseInt(t.innerHTML);
+            }
+            document.querySelector("#totalValue").innerHTML = totalValue + " $";
+        }
+    </script>
+
+    <script>
+        function removeItemInCart(i){
+            let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart"));
+
+            if(confirm("Remove product?")){
+                document.getElementsByClassName("cartItem")[i].remove();
+                document.getElementsByClassName("hrCart_style")[i].remove();
+
+                //Bỏ item và lưu lại trong localstorage
+                shoppingCart.splice(i, 1);
+                localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+
+                window.location = "shoppingCart.html";
+            }
+        }
+    </script>
+
+    <script>
+        function checkOutClick(btn){
+            btn.setAttribute('style', 'display: none');
+            let customerInfos = document.getElementById("customerInfo");
+            customerInfo.setAttribute('style', 'display: flex');
+        }
+    </script>
+
+    <script>
+        function placeOrder(){
+            //Kiểm tra tính hợp lệ
+            let fullName = document.getElementById("fullName").value.trim();
+            let phoneNumber = document.getElementById("phoneNumber").value;
+            let email = document.getElementById("email").value;
+            let address = document.getElementById("address").value.trim();
+
+            if (fullName == "" || phoneNumber == "" || email == "" || address == ""){
+                let alert = document.getElementById("alert");
+                alert.setAttribute('style', 'display: block');
+                return false;
+            }
+
+            //Lưu đơn hàng
+
+            // Đơn hàng là 1 mảng các object
+            // orderDetails=[
+            //     {orderId: 1, fullName:"Teo", address:"HCM", phoneNumber:"456", shoppingDetails: "Item: Product1, price1: 500, quantity1: 1 </br> name2: Product2, price2: 500, quantity2: 1", orderDate: present, status:"confirmation..."}
+            //     {orderId: 2, fullName:"Ti", address:"HN", phoneNumber:"123", shoppingDetails: "Item: Product1, price1: 500, quantity1: 1 </br> name2: Product2, price2: 500, quantity2: 1", orderDate: present, status:"confirmation..."}
+            // ]
+     
+            let date = new Date();
+            let month = date.getMonth() + 1;
+            let orderDate = date.getDate() + "/" + month + "/" + date.getFullYear();
+            
+            let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart"));
+            let shoppingDetails ="";
+            if (shoppingCart) {
+                shoppingCart.forEach((item) => {
+                shoppingDetails += "Item: " + item.productName + ", " + "Price: " + item.productPrice + ", " + "Quantity: " + item.quantity + "</br>";
+                })
+            }
+
+            let orderDetails = JSON.parse(localStorage.getItem("orderDetails"));
+            if (orderDetails == null) {
+                orderDetails = [];
+                orderDetails.push({orderId: 1, fullName: fullName, address: address, phoneNumber: phoneNumber, shoppingDetails: shoppingDetails, orderDate: orderDate, status:"Pending..."});
+            }
+            else{
+                let orderId = orderDetails.length + 1;
+                orderDetails.push({orderId: orderId, fullName: fullName, address: address, phoneNumber: phoneNumber, shoppingDetails: shoppingDetails, orderDate: orderDate, status:"Pending..."});
+            }
+
+            localStorage.removeItem("shoppingCart");
+            localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
+
+            window.location = "orderSuccess.html";
+        }
+    </script>
+</body>
+
+</html>

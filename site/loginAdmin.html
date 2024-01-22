@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin</title>
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+</head>
+<body style="background: url(../Images/Slide_Show/loginAdmin.jpg)">
+    <div style="margin-left: 200px; margin-top: 20px; color: white;">
+        <img src="../Images/Logo.png" alt="" style="width: 200px; margin-bottom: 50px;">
+        <h2 style="color: white;">Login Admin</h2>
+        </br></br>
+        <span>Username: </span> <input type="text" id="username">
+        </br></br>
+        <span>Password: </span> <input type="password" id="password">
+        </br></br>
+        <input type="button" id="loginBtn" value="Login" onclick="loginAdmin()">
+    </div>
+
+    <script>
+        function loginAdmin(){
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username == "admin" && password == "12345"){
+                window.location = "management.html";
+            }
+            else{
+                alert("Invalid username or password!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
